@@ -1,5 +1,4 @@
 System.register(['angular2/core'], function(exports_1) {
-    "use strict";
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -24,11 +23,12 @@ System.register(['angular2/core'], function(exports_1) {
                     core_1.Component({
                         selector: 'my-hero-detail',
                         template: "\n  <div *ngIf=\"hero\">\n    <h2>{{hero.name}} details!</h2>\n    <div><label>id: </label>{{hero.id}}</div>\n    <div>\n      <label>name: </label>\n      <input [(ngModel)]=\"hero.name\" placeholder=\"name\"/>\n    </div>\n  </div>\n  ",
+                        inputs: ['hero']
                     }), 
                     __metadata('design:paramtypes', [])
                 ], HeroDetailComponent);
                 return HeroDetailComponent;
-            }());
+            })();
             exports_1("HeroDetailComponent", HeroDetailComponent);
         }
     }
