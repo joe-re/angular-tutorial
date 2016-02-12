@@ -1,4 +1,4 @@
-System.register(['angular2/core', './hero.service', './heroes.component', './dasdhboard.component', 'angular2/router'], function(exports_1) {
+System.register(['angular2/core', './hero.service', './heroes.component', './dasdhboard.component', './hero-detail.component', 'angular2/router'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,7 +8,7 @@ System.register(['angular2/core', './hero.service', './heroes.component', './das
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, hero_service_1, heroes_component_1, dasdhboard_component_1, router_1;
+    var core_1, hero_service_1, heroes_component_1, dasdhboard_component_1, hero_detail_component_1, router_1;
     var AppComponent;
     return {
         setters:[
@@ -23,6 +23,9 @@ System.register(['angular2/core', './hero.service', './heroes.component', './das
             },
             function (dasdhboard_component_1_1) {
                 dasdhboard_component_1 = dasdhboard_component_1_1;
+            },
+            function (hero_detail_component_1_1) {
+                hero_detail_component_1 = hero_detail_component_1_1;
             },
             function (router_1_1) {
                 router_1 = router_1_1;
@@ -44,6 +47,11 @@ System.register(['angular2/core', './hero.service', './heroes.component', './das
                             name: 'Dashboard',
                             component: dasdhboard_component_1.DashboardComponent,
                             useAsDefault: true
+                        },
+                        {
+                            path: '/detail/:id',
+                            name: 'HeroDetail',
+                            component: hero_detail_component_1.HeroDetailComponent
                         },
                     ]),
                     core_1.Component({
