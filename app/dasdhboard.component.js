@@ -33,7 +33,8 @@ System.register(['angular2/core', './hero.service'], function(exports_1) {
                 DashboardComponent = __decorate([
                     core_1.Component({
                         selector: 'my-dashboard',
-                        template: '<h3>My Dashboard</h3>'
+                        template: '<h3>My Dashboard</h3>',
+                        styleUrls: ['app/dashboard.component.css']
                     }), 
                     __metadata('design:paramtypes', [hero_service_1.HeroService])
                 ], DashboardComponent);
